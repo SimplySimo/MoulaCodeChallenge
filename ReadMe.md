@@ -38,7 +38,6 @@ please not that the selenium tests with make modifications whether add or remove
 ##### What has been done
 - The ticked lines for the user stories
 - Use of The Repository Pattern for handling database connections
-- Changed the names of the environment specific configuration profiles. In the real world these would contain environment specific variables such as connection strings etc.
 - Database is hosted on azure. To change databases all that needs to be done is modify the connection string. This can be done for environment specific connection strings
 - Unit testing MVC application using mocked data context
 - End2End/Functional testing with selenium suite
@@ -46,6 +45,7 @@ please not that the selenium tests with make modifications whether add or remove
 
 ##### What was missed
 - code coverage check. Due to not having very much internet while creating this application and not having the enterprise version of Visual studio ive been unable to run any code coverage checks on the code and hence filled in the gaps
+- Changing the names of the environment specific configurations. In the real world these would contain environment specific variables such as connection strings etc.
  - patting all the dogs while working on this
  
 ##### What I would like to do differently next time (Reflection) / Extension work
