@@ -13,10 +13,6 @@ namespace MoulaCodeChallenge.Controllers
         public Models.IDbContext dbContext;
 
         //Dependancy Injection
-        public HomeController()
-        {
-            dbContext = new Models.DatabaseContext();
-        }
         public HomeController(Models.IDbContext repo)
         {
             dbContext = repo;

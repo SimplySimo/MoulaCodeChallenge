@@ -26,7 +26,7 @@ namespace MoulaCodeChallenge.Controllers.Tests
             string expected = "solohan19940120";
 
             //act
-            CustomerController controller = new CustomerController();
+            CustomerController controller = new CustomerController(new DatabaseContext());
             string result = controller.CreateCustomerCode(newCustomer.FirstName, newCustomer.LastName, newCustomer.DateOfBirth);
 
             //verify

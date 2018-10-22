@@ -8,11 +8,7 @@ namespace MoulaCodeChallenge.Controllers
     {
         public Models.IDbContext dbContext;
 
-        //Dependancy Injections
-        public CustomerController()
-        {
-            dbContext = new Models.DatabaseContext();
-        }
+        //Dependancy Injection
         public CustomerController(Models.IDbContext repo)
         {
             dbContext = repo;
